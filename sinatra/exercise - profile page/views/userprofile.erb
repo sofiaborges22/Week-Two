@@ -1,0 +1,30 @@
+<!-- 
+<h5><%= @cookies %></h5>
+
+<form action="/sessiontest" method="POST">
+
+	<input type="value" name="session" placeholder="Enter name"> 
+
+<button type="submit">Session</button> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In Page</title>
+</head>
+<body>
+	<h1>Sign into your profile page</h1>
+
+<form action="/receivinginfo" method="POST">
+
+	<input type="value" name="firstname" placeholder="Enter username"> 
+	<input type="value" name="password" placeholder="Enter password"> 
+
+	<button type="submit">Enter</button>
+
+</form>
+
+	<h5><%= @user %></h5>
+
+</body>
+</html>

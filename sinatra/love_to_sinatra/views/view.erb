@@ -1,0 +1,5 @@
+<% @list.each_with_index do |post, index| %>
+  <a href="/post_details/<%= index %>"><%= post.title %></a> <br>
+<% end %>
+
+<h4> <a href="/new_post">Create a new post</a> </h4>

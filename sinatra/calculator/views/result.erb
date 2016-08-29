@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Calculator</title>
+</head>
+<body>
+	<h1>Online Calculator</h1>
+	<p>Your result is:</p>
+	<%= @calculation %>
+	<form action="/calculate/save" method="POST">
+
+	<button type="save" name="operation" value="save">Save</button>
+	
+	</form>
+</body>
+</html>

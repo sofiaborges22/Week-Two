@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Quiz</title>
+</head>
+<body>
+<center>
+<h1>Movie Quiz Time! Let's play!</h1>
+
+	<h2>Which movie came out in <%= @list[@index].year %>? </h2>
+
+<% @list.each_with_index do |movie, index| %>
+	
+	<% if index == @index %>
+		<img src="<%= movie.poster %>" height= "150" alt= "movieposter" onClick="location.href='/quiz'">
+	<% else %>
+		<img src="<%= movie.poster %>" height= "150" alt= "movieposter" onClick="alert('Incorrect Answer')">
+	<% end %>
+<% end %>
+
+</center>
+</body>
+</html>
